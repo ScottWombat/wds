@@ -1,0 +1,26 @@
+
+.row {
+  margin-top: 0em;
+    margin-bottom: 0em;
+  
+}
+
+.input-field input:focus + label {
+   color: red !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid red !important;
+   box-shadow: 0 0.1px 0 0 red !important
+ }
+
+ /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: red;
+   }
+
+.material-icons {
+  color: grey;
+  }
+
+

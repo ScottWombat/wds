@@ -1,0 +1,11 @@
+{
+  "app.to_get_started": "Pour commencer, modifier {filename} et enregistrer pour recharger.",
+  "app.welcome": "ยินดีต้อนรับสู่ React",
+  "app.logo": "เพลิดเพลิน",
+  "app.lady.link": "ผู้หญิง",
+  "app.gentleman.link": "ผู้ชาย",
+  "app.login.menu": "เข้าสู่ระบบ",
+  "app.mycart.menu": "ช้อปปิ้งของฉัน",
+  "app.contact.menu": "ติดต่อ",
+  "app.about.menu": "เกี่ยวกับ"
+}

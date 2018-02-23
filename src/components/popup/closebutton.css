@@ -1,0 +1,34 @@
+.close_button {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  line-height: 50px;
+  display: inline-block;
+  top:-50px;
+  right:-50px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.close_button:before,
+.close_button:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -25px;
+  display: block;
+  height: 10px;
+  width: 50px;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+.close_button:after {
+  transform: rotate(45deg);
+}
+.close_button:hover:before,
+.close_button:hover:after {
+  transform: rotate(360deg);
+}

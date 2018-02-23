@@ -1,0 +1,14 @@
+.logo{
+    position:absolute;
+    
+    font-family: 'ClickerScript';
+    color:#fff;
+    margin-top:370px;
+    margin-left:100px;
+    font-size:10em;
+    animation: fadein 1s linear 1 normal forwards;
+    animation-delay: 200s;
+    -webkit-animation: fadein 1s linear 1 normal forwards;
+    -webkit-animation-delay: 20s;
+     z-index: 2;
+ }

@@ -1,0 +1,8 @@
+.bar{
+    margin-left:5px;
+    color:#ccc
+}
+.menuItem{
+    position: relative; 
+    left: 0px;
+}

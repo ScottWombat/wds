@@ -1,0 +1,13 @@
+canvas {  position:absolute; left:0;top:0;}
+
+.display {
+  position:fixed; left:42%; top:45%;
+  font-size: 6em;
+}
+
+.title {
+  padding:0.2em;
+  background:rgba(255,255,255,0.5);
+  display:block; text-align: center;
+  font-size: 12px;
+}

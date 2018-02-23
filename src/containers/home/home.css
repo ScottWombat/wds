@@ -1,0 +1,29 @@
+html,body{
+    height:100%;
+} 
+
+.box {
+        height: 1000px;
+        width: 1000px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index:1;
+       
+    }
+ 
+
+.box img {
+        
+        width:400px;
+        height:400px;
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 300px;
+        -webkit-animation: fadein 15s linear 1 normal forwards;
+      
+}
+

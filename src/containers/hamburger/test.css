@@ -1,0 +1,203 @@
+.menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+
+}
+
+.menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+.menuToggle span.ham
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #fff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.menuToggle span.hame:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.menuToggle span.ham:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.menuToggle input:checked ~ span.ham
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+.menuToggle input:checked ~ span.ham:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+   
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+.menuToggle input:checked ~ span.ham:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+   
+}
+
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+.menu
+{
+  position: absolute;
+  display:flex;
+  width: 100%;
+  
+  margin: -100px 0 0 -60px;
+  padding: 50px;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  background: #ededed;
+  background-color:rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  
+  height:100%;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+
+
+.menu ul li
+{
+  padding: 0;
+  color:#fff;
+  font-size: 18px;
+  display:inline;
+  margin-left:20px;
+  cursor: pointer;
+}
+
+.menu ul li:hover
+{
+ 
+  color:#fff;
+  font-weight:bold;
+}
+
+.menu ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.menu ul li:hover:before {
+  visibility: visible;
+  color:#fff;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.menu ul.two li
+{
+  padding: 0;
+  color:#fff;
+  font-size: 24px;
+
+}
+
+
+
+/*
+ * And let's slide it in from the left
+ */
+.menuToggle input:checked ~ .menu
+{
+  transform: none;
+
+}
+
+.navLeft{
+     flex: 0 0 60%;
+}
+.navRight{
+    flex: 1;
+}
+.menuLink{
+    text-decoration: none;
+    font-size:2em;
+    color:#fff;
+    margin-left:50px;
+}
+.vertical_bar{
+    padding-left:15px;
+    padding-right:15px;
+    color:#000;
+}

@@ -1,0 +1,99 @@
+.polaroid {
+   
+    border: 6px solid #fff;
+    border-radius: 0px;
+    width: 800px;
+    height: 400px;
+   
+    background-color: rgba(67, 103, 128, 0.7);
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+   
+    
+}
+.modalStyle {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        z-index: 300;
+        background-color: rgba(67, 103, 128, 0.7);
+        
+        overflow:hidden;
+        position:absolute;
+        -webkit-animation: slide-down 1s ease-out;
+        -moz-animation: slide-down 1s ease-out;
+   
+}
+
+@-webkit-keyframes slide-down {
+      0% { opacity: 0; -webkit-transform: translateY(-50%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-down {
+      0% { opacity: 0; -moz-transform: translateY(-50%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
+}  
+.bag{
+     position: absolute;
+       color:#fff;
+        top: 35%;
+        left: 20%;
+       float:left;
+
+}
+.bag_desc{
+    position: absolute; 
+    top: 40%;
+    left: 30%;
+    float:left;
+    color:#fff;
+    font-family: 'RalewayThin';
+    font-weight:bold;
+    letter-spacing: 3px;
+}
+.menu{
+    position: absolute;
+    width:100%;
+    top: 60%;
+    left: 5%;
+    float:left;
+    display:flex;
+    color:black;
+    font-family: 'RalewayThin';
+    font-weight:bold;
+   
+}
+.menu > div.continue{
+    flex:1;
+    margin-left:20px;
+    color:white;
+}
+.menu > div.mybag{
+    flex:1;
+    margin-left:30px;
+    color:white;
+}
+.menu > div.checkout{
+    flex:1;
+    margin-left:-15px;
+    color:white;
+}
+.menu > div.home{
+    flex:1;
+    margin-left:0px;
+    color:white;
+}
+
+.menuLink{
+    text-decoration: none;
+    color:#fff;
+}
+.menuLink:hover {
+  color: #FFF;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+

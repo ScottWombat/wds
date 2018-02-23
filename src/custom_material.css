@@ -1,0 +1,32 @@
+.row .col{
+    padding: 0 !important;
+}
+/*
+input[type="text"] + label {
+    pointer-events: none;
+
+    * {
+        pointer-events: all;
+    }
+}
+*/
+.input-field{
+    color:#607D8B;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+     color: #424242;
+}
+.input-field input:focus + label {
+   color: #424242 !important;
+ }
+.row .input-field input:focus {
+   border-bottom: 1px solid #424242 !important;
+   box-shadow: 0 0px 0 0 red !important
+ }
+fieldset {
+   border:0 none;
+   width:300px;
+   font-family:'RalewayThin';
+   color:'#ccc';
+}

@@ -1,0 +1,35 @@
+
+
+.btn {
+  margin-right: 1em; /* remove this while use*/
+  margin-bottom: 1em; /* remove this while use*/
+	display: inline-block;
+	outline: none;
+	*zoom: 1;
+	text-align: center;
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 300;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	border: 1px solid;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+    
+    border-radius: 3px;
+    
+    font-size: 0.8125em;
+	padding: 0.4125em 1.25em;
+    
+   
+	color: #808080;
+	border-color: #808080;
+}
+
+
+.btn:hover {
+  background: #808080;
+  color: #fff;
+  border-color: #808080;	
+}
